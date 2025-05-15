@@ -14,15 +14,25 @@ export const LongStory: Story = {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
-        gap: "10px",
+        gap: "30px",
       }}
     >
-      {Array.from({ length: 2000 }, (_, i) => (
+      {Array.from({ length: 1000 }, (_, i) => (
         <div
           key={i}
-          style={{ padding: "10px", border: "1px solid #ccc", height: "300px" }}
+          style={{
+            padding: "10px",
+            border: "1px solid #ccc",
+            height: "200px",
+            width: "200px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontWeight: "bold",
+            backgroundColor: i % 2 === 0 ? "#f0f0f0" : "#fff",
+          }}
         >
-          Gallery item {i + 1}
+          Item {i + 1}
         </div>
       ))}
     </div>

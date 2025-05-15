@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *storybook.log
+
+# Argos: ignore storybook screenshots
+./screenshots
