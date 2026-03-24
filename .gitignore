@@ -23,4 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Storybook
 *storybook.log
+storybook-static
+
+# Argos: ignore storybook screenshots
+screenshots
